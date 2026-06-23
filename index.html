@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkle & Shine Cleaning - Premium Cleaning Services Philadelphia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Spray Bottle -->
+                        <rect x="35" y="20" width="30" height="50" fill="none" stroke="#1e5a96" stroke-width="2" rx="3"/>
+                        <rect x="40" y="15" width="20" height="8" fill="#1e5a96"/>
+                        <circle cx="50" cy="12" r="3" fill="#1e5a96"/>
+                        
+                        <!-- Soapy Bubbles -->
+                        <circle cx="65" cy="35" r="8" fill="#87ceeb" opacity="0.7"/>
+                        <circle cx="72" cy="42" r="6" fill="#87ceeb" opacity="0.6"/>
+                        <circle cx="68" cy="52" r="7" fill="#87ceeb" opacity="0.65"/>
+                        <circle cx="75" cy="60" r="5" fill="#87ceeb" opacity="0.5"/>
+                        <circle cx="60" cy="58" r="6" fill="#87ceeb" opacity="0.6"/>
+                        
+                        <!-- Shine effect on bubbles -->
+                        <circle cx="67" cy="32" r="2.5" fill="white" opacity="0.8"/>
+                        <circle cx="73" cy="40" r="2" fill="white" opacity="0.8"/>
+                        <circle cx="69" cy="50" r="2.5" fill="white" opacity="0.8"/>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <span class="sparkle">Sparkle</span>
+                    <span class="shine">&</span>
+                    <span class="shine-text">Shine</span>
+                </div>
+                <div class="rating-badge">⭐⭐⭐⭐⭐</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="cta-nav" onclick="document.getElementById('quote').scrollIntoView({behavior: 'smooth'})">
+                <i class="fas fa-quote-left"></i> Free Quote
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i> Premium Cleaning Excellence
+                </div>
+                <h1>Your Home Deserves to <span class="sparkle-gradient">Sparkle</span> & <span class="shine-gradient">Shine</span></h1>
+                <p>Award-Winning Deep Cleaning. Satisfaction Guaranteed. Philadelphia's #1 Trusted Cleaning Company</p>
+                <div class="hero-ctas">
+                    <button class="cta-button primary" onclick="document.getElementById('quote').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-gift"></i> Get Free Quote
+                    </button>
+                    <button class="cta-button secondary" onclick="document.getElementById('reviews').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-star"></i> See Reviews
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>⭐ 5 Star</h3>
+                        <p>Rated</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Satisfaction</p>
+                    </div>
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-images">
+                <div class="hero-img hero-img-1">
+                    <img src="https://images.unsplash.com/photo-1584622181563-430f63602d4b?w=500&h=600&fit=crop" alt="Professional Cleaning">
+                </div>
+                <div class="hero-img hero-img-2">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=600&fit=crop" alt="Sparkly Clean Home">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Quote Section -->
+    <section id="quote" class="quote-section">
+        <div class="container">
+            <div class="quote-wrapper">
+                <div class="quote-content">
+                    <h2><i class="fas fa-gift"></i> Get Your Free Quote Today</h2>
+                    <p>No obligation. No hidden fees. Just honest pricing for premium cleaning services.</p>
+                    
+                    <form class="quote-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="Your Full Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="tel" placeholder="Your Phone" required>
+                            <select required>
+                                <option value="">Select Service Type</option>
+                                <option value="residential">Residential Deep Cleaning</option>
+                                <option value="moveout">Move-Out Cleaning</option>
+                                <option value="commercial">Commercial Cleaning</option>
+                                <option value="maintenance">Regular Maintenance</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <input type="text" placeholder="Property Address (Optional)">
+                            <input type="number" placeholder="Square Footage (Optional)" min="0">
+                        </div>
+                        <textarea placeholder="Tell us about your cleaning needs and any specific concerns..." rows="4"></textarea>
+                        <button type="submit" class="cta-button primary large">
+                            <i class="fas fa-paper-plane"></i> Send Free Quote Request
+                        </button>
+                    </form>
+                </div>
+                <div class="quote-image">
+                    <img src="https://images.unsplash.com/photo-1563207153-f403bf289096?w=400&h=500&fit=crop" alt="Professional Team">
+                    <div class="quote-badge">Expert Team Ready to Help</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1563207153-f403bf289096?w=600&h=500&fit=crop" alt="Sparkle & Shine Team">
+                    <div class="image-badge">Est. Trusted Cleaners</div>
+                </div>
+                <div class="about-text">
+                    <h2>Welcome to <span class="brand-highlight">Sparkle & Shine</span></h2>
+                    <p class="intro-text">We are a small, passionate 5-star cleaning company based in South Philadelphia. Our mission is simple: make your home and business spotless while treating you with the utmost respect and professionalism.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Residential & Commercial</h4>
+                                <p>From apartments to offices, we handle it all</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Specialized Deep Cleaning</h4>
+                                <p>We don't just clean - we DETAIL every corner</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>100% Satisfaction Guaranteed</h4>
+                                <p>Your happiness is our promise</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Pet Friendly</h4>
+                                <p>Safe and gentle with your furry family members</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="about-closer">We come highly recommended by our clients because we treat every cleaning like it's our own home. Quality, attention to detail, and genuine care - that's the Sparkle & Shine difference.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Premium Services</h2>
+            <p class="section-subtitle">Specialized cleaning tailored to your needs</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1559027615-cd2628902d4a?w=400&h=300&fit=crop" alt="Deep Cleaning">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Deep House Cleaning</h3>
+                        <p>Complete residential cleaning with meticulous attention to every detail. We clean what others miss.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> All rooms thoroughly cleaned</li>
+                            <li><i class="fas fa-check"></i> Dusting & vacuuming</li>
+                            <li><i class="fas fa-check"></i> Bathroom sanitization</li>
+                            <li><i class="fas fa-check"></i> Kitchen deep clean</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400&h=300&fit=crop" alt="Move Out Cleaning">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <h3>Move-Out Cleaning</h3>
+                        <p>Get your security deposit back! Professional move-out cleaning that leaves your old place spotless.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Wall & ceiling cleaning</li>
+                            <li><i class="fas fa-check"></i> Appliance deep clean</li>
+                            <li><i class="fas fa-check"></i> Floor refinishing</li>
+                            <li><i class="fas fa-check"></i> Carpet shampooing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1577578927296-54330a3c15d2?w=400&h=300&fit=crop" alt="Commercial Cleaning">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Commercial Cleaning</h3>
+                        <p>Professional office and retail space cleaning. We create spotless, professional environments.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Office spaces</li>
+                            <li><i class="fas fa-check"></i> Retail stores</li>
+                            <li><i class="fas fa-check"></i> Sanitization</li>
+                            <li><i class="fas fa-check"></i> Flexible scheduling</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1581092162562-40038f5550ef?w=400&h=300&fit=crop" alt="Regular Maintenance">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3>Regular Maintenance</h3>
+                        <p>Keep your home consistently pristine with our regular cleaning schedules - weekly, bi-weekly, or monthly.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Customizable schedules</li>
+                            <li><i class="fas fa-check"></i> Sheet changes included</li>
+                            <li><i class="fas fa-check"></i> Discounted rates</li>
+                            <li><i class="fas fa-check"></i> Loyal client benefits</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Sparkle & Shine?</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>5-Star Rated</h3>
+                    <p>Consistently rated 5 stars by our satisfied clients across Philadelphia</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>100% Satisfaction</h3>
+                    <p>We don't leave until you're completely happy with every detail</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Professional Team</h3>
+                    <p>Trained, trustworthy, and respectful cleaners who care</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Eco-Friendly</h3>
+                    <p>Using safe, environmentally conscious products</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <h3>Pet Friendly</h3>
+                    <p>Safe and gentle with your beloved pets and family</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Fully Insured</h3>
+                    <p>Complete peace of mind and protection for your home</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <p class="section-subtitle">⭐⭐⭐⭐⭐ Trusted by hundreds of happy customers</p>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">"Sarah and her team did an INCREDIBLE job on my three bedroom, two bath apartment. Needed a deep clean to ensure I'd get my security deposit back after a move out, and I'm pretty sure my landlord owes me more than my deposit now! It was cleaner than when I moved in! Thanks Sarah!!! Definitely recommend!"</p>
+                    <p class="review-author">— Move-Out Client</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">"I absolutely LOVE them! I've been through several cleaners over the years and they are by far the best. They always make my house spotless, put everything back where they found it, and they even change my sheets for me. They're great humans who do great things!"</p>
+                    <p class="review-author">— Regular Client</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">"I hired Sparkle & Shine for a move-out clean and I am so happy that I did! Sarah and Kate are professional, communicative, and utterly magical when it comes to cleaning. Everything looks brand new!"</p>
+                    <p class="review-author">— 5-Year Tenant</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">"I used Sparkle & Shine for a clean-out move and they were incredibly thorough, detailed and professional. The price was fair, too. Would definitely hire again."</p>
+                    <p class="review-author">— Satisfied Client</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">"I recently had Sparkle & Shine complete a deep clean to my house, and I couldn't be happier! I was asked to try and find something not up to my standards, and even though I tried I couldn't find a single issue! HIGHLY recommend!"</p>
+                    <p class="review-author">— Regular Client</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">"Sparkle & Shine cleaned our store and offices and what an incredible job they did! The girls were so professional and respectful, but their cleaning was more thorough than we have ever had. Celebrity status with us now. HIGHLY recommend."</p>
+                    <p class="review-author">— Commercial Client</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours & Location -->
+    <section class="hours-location">
+        <div class="container">
+            <div class="hours-location-grid">
+                <div class="hours-card">
+                    <h3><i class="fas fa-clock"></i> Hours of Operation</h3>
+                    <div class="hours-list">
+                        <div class="hour">
+                            <span>Monday - Saturday</span>
+                            <strong>9:00 AM - 6:00 PM</strong>
+                        </div>
+                        <div class="hour">
+                            <span>Sunday</span>
+                            <strong>By Appointment</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Our Location</h3>
+                    <p>235 S 18th St<br>Philadelphia, PA 19103</p>
+                    <p style="margin-top: 1rem; color: #666;">South Philadelphia</p>
+                </div>
+
+                <div class="rating-card">
+                    <h3><i class="fas fa-star"></i> Our Rating</h3>
+                    <div class="big-rating">
+                        <div class="stars-large">⭐⭐⭐⭐⭐</div>
+                        <p>5.0 Stars</p>
+                        <p style="color: #999; font-size: 0.9rem;">500+ Verified Reviews</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Experience the Sparkle & Shine Difference?</h2>
+            <p>Let us transform your home into something spectacular</p>
+            <button class="cta-button primary large" onclick="document.getElementById('quote').scrollIntoView({behavior: 'smooth'})">
+                <i class="fas fa-gift"></i> Get Your Free Quote Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+12155004043">(215) 500-4043</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:graysarah3392@gmail.com">graysarah3392@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>235 S 18th St<br>Philadelphia, PA 19103</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Sat: 9 AM - 6 PM<br>Sun: By Appointment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Phone" required>
+                    <textarea placeholder="Your Message..." rows="5" required></textarea>
+                    <button type="submit" class="cta-button primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="35" y="20" width="30" height="50" fill="none" stroke="#87ceeb" stroke-width="2" rx="3"/>
+                            <rect x="40" y="15" width="20" height="8" fill="#87ceeb"/>
+                            <circle cx="50" cy="12" r="3" fill="#87ceeb"/>
+                            <circle cx="65" cy="35" r="8" fill="#87ceeb" opacity="0.7"/>
+                            <circle cx="72" cy="42" r="6" fill="#87ceeb" opacity="0.6"/>
+                            <circle cx="68" cy="52" r="7" fill="#87ceeb" opacity="0.65"/>
+                        </svg>
+                    </div>
+                    <h4>Sparkle & Shine</h4>
+                    <p>⭐⭐⭐⭐⭐ Philadelphia's Premium Cleaning Service</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Deep House Cleaning</a></li>
+                        <li><a href="#services">Move-Out Cleaning</a></li>
+                        <li><a href="#services">Commercial Cleaning</a></li>
+                        <li><a href="#services">Regular Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📞 (215) 500-4043<br>📧 graysarah3392@gmail.com<br>📍 Philadelphia, PA</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sparkle & Shine Cleaning Company. All rights reserved. | Premium Cleaning in Philadelphia</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
